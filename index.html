@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ed">
+  <meta name="description" content="An open prototype showing how countries can build AI locally and collaborate across borders with control over sensitive data.">
+  <title>Terra — Sovereign AI, shared resilience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Terra home"><span class="brand-mark">T</span><span>TERRA<span class="brand-light"> / SOVEREIGN AI</span></span></a>
+    <nav aria-label="Main navigation"><a href="#how">How it works</a><a href="#simulator">Prototype</a><a href="#principles">Principles</a><a class="github-link" href="README.md">Project brief ↗</a></nav>
+  </header>
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> AN OPEN BLUEPRINT FOR EVERY COUNTRY</div>
+        <h1>Build at home.<br><em>Benefit together.</em></h1>
+        <p class="hero-lede">A country should be able to build useful AI on its own terms. Terra shows how local control and shared progress can work side by side.</p>
+        <div class="hero-actions"><a class="button primary" href="#simulator">Explore the prototype <span>↓</span></a><a class="text-link" href="#how">See the model <span>↗</span></a></div>
+        <div class="hero-note"><span class="note-icon">✳</span><span>Designed for countries, across every continent.<br><b>Grounded in one shared challenge: drought resilience.</b></span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of connected country nodes sharing knowledge while keeping records local">
+        <div class="orbital orbit-one"></div><div class="orbital orbit-two"></div>
+        <div class="world-grid"></div>
+        <div class="core"><span>◌</span><b>Shared<br>resilience</b></div>
+        <div class="node node-a"><span class="node-dot"></span><b>GH</b><small>Country node</small><i>LOCAL DATA</i></div>
+        <div class="node node-b"><span class="node-dot"></span><b>KE</b><small>Country node</small><i>LOCAL DATA</i></div>
+        <div class="node node-c"><span class="node-dot"></span><b>SN</b><small>Country node</small><i>LOCAL DATA</i></div>
+        <div class="signal signal-a">approved model update <span>···›</span></div><div class="signal signal-b">public weather <span>···›</span></div>
+        <div class="art-caption">Local intelligence<br><b>Stronger shared outcomes</b></div>
+      </div>
+    </section>
+    <section class="principle-strip wrap" id="principles">
+      <div><span class="strip-num">01</span><span><b>Keep sensitive data local</b><small>National control by design</small></span></div>
+      <div><span class="strip-num">02</span><span><b>Share only with purpose</b><small>Governed, opt-in collaboration</small></span></div>
+      <div><span class="strip-num">03</span><span><b>Use the global commons</b><small>Open knowledge, locally chosen</small></span></div>
+    </section>
+    <section class="section wrap" id="how">
+      <div class="section-heading"><div><div class="eyebrow">A THREE-LAYER MODEL</div><h2>Sovereignty is a spectrum.</h2></div><p>Not every dataset needs the same boundary. Set the rules by sensitivity, purpose, and who should benefit.</p></div>
+      <div class="layers">
+        <article class="layer-card country"><div class="layer-top"><span>01 / COUNTRY</span><span class="layer-icon">⌂</span></div><h3>National AI node</h3><p>Train and run models where sensitive farm and household records already live. Local stewards control access, keys, and decisions.</p><div class="layer-tags"><span>Raw data stays</span><span>Local inference</span></div><div class="layer-footer"><b>Country controls the node</b><span>↗</span></div></article>
+        <article class="layer-card region"><div class="layer-top"><span>02 / REGION</span><span class="layer-icon">◎</span></div><h3>Learning circle</h3><p>Countries can opt into a shared learning round. Screened updates travel; raw records remain under national control.</p><div class="layer-tags"><span>Opt-in rounds</span><span>Reciprocal benefit</span></div><div class="layer-footer"><b>Countries govern together</b><span>↗</span></div></article>
+        <article class="layer-card global"><div class="layer-top"><span>03 / GLOBAL</span><span class="layer-icon">✳</span></div><h3>Open commons</h3><p>Public weather, agronomy research, and portable open models can be used broadly after provenance and suitability checks.</p><div class="layer-tags"><span>Low-sensitivity</span><span>Open standards</span></div><div class="layer-footer"><b>Adoption stays local</b><span>↗</span></div></article>
+      </div>
+    </section>
+    <section class="simulator-section" id="simulator">
+      <div class="wrap simulator-wrap">
+        <div class="section-heading sim-heading"><div><div class="eyebrow">INTERACTIVE CONCEPT DEMO</div><h2>Run a drought scenario.</h2></div><p>Choose how far collaboration goes. See the boundary, the shared signal, and the value returned to participating countries.</p></div>
+        <div class="simulator">
+          <div class="sim-controls">
+            <div class="control-label"><span class="control-number">A</span><div><b>Set collaboration level</b><small>Each country retains the right to pause or leave.</small></div></div>
+            <div class="segmented" role="group" aria-label="Collaboration level"><button class="level-button active" data-level="national" aria-pressed="true">National</button><button class="level-button" data-level="regional" aria-pressed="false">Regional</button><button class="level-button" data-level="global" aria-pressed="false">Global</button></div>
+            <div class="country-select"><label for="country">National node</label><select id="country"><option value="Ghana">Ghana</option><option value="Kenya">Kenya</option><option value="Senegal">Senegal</option><option value="Chile">Chile</option><option value="India">India</option></select><span>⌄</span></div>
+            <div class="scenario-card"><div class="scenario-icon">☼</div><div><b>Seasonal drought alert</b><p>Dry spell risk rising across the maize belt. Can earlier planting guidance reduce losses?</p></div><span class="synthetic">SIMULATED</span></div>
+            <button class="button primary run-button" id="run-scenario"><span class="run-symbol">▶</span> Run scenario</button>
+            <p class="sim-footnote">Uses illustrative synthetic values. No live data or model is connected.</p>
+          </div>
+          <div class="sim-results" aria-live="polite">
+            <div class="results-top"><div><span class="eyebrow">WHAT MOVES, WHAT STAYS</span><h3 id="result-title">National only</h3></div><span class="status-pill"><span></span> POLICY GATE ACTIVE</span></div>
+            <div class="flow-visual">
+              <div class="flow-country"><div class="mini-country">⌂</div><b id="flow-country-name">Ghana</b><small>Records + model</small><span>STAYS LOCAL</span></div>
+              <div class="flow-line"><span id="flow-label">No outbound data</span><i></i></div>
+              <div class="flow-region"><div class="mini-region">◎</div><b id="flow-target">No sharing</b><small id="flow-subtarget">National inference</small><span id="flow-state">LOCAL ONLY</span></div>
+            </div>
+            <div class="result-stats"><div><small>Expected loss reduction*</small><b id="loss-stat">8<span>%</span></b></div><div><small>Data exported</small><b id="export-stat">None</b></div><div><small>Decision owner</small><b id="owner-stat">National team</b></div></div>
+            <div class="agent-output"><div class="agent-avatar">T<span>✳</span></div><div><div class="agent-title">TERRA FIELD AGENT <span>ADVISORY ONLY</span></div><p id="agent-message">“Dry spell watch is active. Review local soil moisture and district forecasts before adjusting planting guidance.”</p></div></div>
+            <div class="run-feedback" id="run-feedback" role="status"></div>
+          </div>
+        </div>
+        <p class="disclaimer">*Illustrative scenario values for demonstration only; not a validated forecast. Model updates and aggregates may still leak information.</p>
+      </div>
+    </section>
+    <section class="section wrap architecture-section">
+      <div class="section-heading"><div><div class="eyebrow">THE NETWORK, AT A GLANCE</div><h2>Local control. Shared learning.</h2></div><a class="text-link" href="assets/architecture.svg" target="_blank">Open diagram <span>↗</span></a></div>
+      <div class="architecture-frame"><img src="assets/architecture.svg" alt="Architecture diagram showing country data and inference staying local, approved updates moving to a regional federation, and open global knowledge feeding a baseline." loading="lazy"></div>
+    </section>
+    <section class="cta-section"><div class="wrap cta-inner"><div><div class="eyebrow">A STARTING POINT, NOT A CLOSED SYSTEM</div><h2>Build the capacity.<br><em>Keep the choice.</em></h2><p>Every country deserves the tools and talent to shape AI around its own priorities — and a fair seat at the table when shared challenges call for collaboration.</p><a class="button light" href="README.md">Explore the project brief <span>↗</span></a></div><div class="cta-seal"><span>✳</span><b>Local by design</b><small>Open by choice</small></div></div></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#home"><span class="brand-mark">T</span><span>TERRA<span class="brand-light"> / SOVEREIGN AI</span></span></a><span>Concept prototype · Synthetic data · Open for adaptation</span><a href="README.md">Read the project brief ↗</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
